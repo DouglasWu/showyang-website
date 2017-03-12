@@ -1,0 +1,1093 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>吳秀陽Shiow-Yang Wu</title>
+<!--mobile apps-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="My Resume Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+	SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<!-- <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script> -->
+<!--mobile apps-->
+<!--Custom Theme files-->
+<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+<link href="css/modal.css" type="text/css" rel="stylesheet" media="all">
+<link rel="stylesheet" href="css/swipebox.css">
+
+<link rel="shortcut icon" href="images/NDHU_logo.png" />
+
+<!--//Custom Theme files-->
+<!--js-->
+<script src="js/jquery-1.11.1.min.js"></script> 
+<!-- //js -->
+<!--web-fonts-->
+<link href='//fonts.googleapis.com/css?family=Overlock:400,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+<!--//web-fonts-->
+<!--start-smooth-scrolling-->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>	
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').stop(true, true).animate({scrollTop:$(this.hash).offset().top},800);
+		});
+
+		// sticky navbar
+		var $menu = $('.top-nav');
+		var origOffsetY = $menu.offset().top;
+		function scroll() {
+			if ($(window).scrollTop() >= origOffsetY) {
+				$menu.addClass('sticky');
+				$('.content').addClass('menu-padding');
+			} else {
+				$menu.removeClass('sticky');
+				$('.content').removeClass('menu-padding');
+			}
+		}
+		document.onscroll = scroll;
+
+		// bootstrap fullscreen modal
+		$(".modal-fullscreen").on('show.bs.modal', function () {
+		  setTimeout( function() {
+		    $(".modal-backdrop").addClass("modal-backdrop-fullscreen");
+		  }, 0);
+		});
+		$(".modal-fullscreen").on('hidden.bs.modal', function () {
+		  $(".modal-backdrop").addClass("modal-backdrop-fullscreen");
+		});
+	});
+</script>
+<!--//end-smooth-scrolling-->
+</head>
+<body>
+	<!--banner-->
+	<div id="home" class="banner">
+		<div class="banner-info">
+			<div class="container">
+				<div class="col-md-4 header-left">
+					<img src="images/syWu.jpg" alt=""/>
+				</div>
+				<div class="col-md-8 header-right">
+					<!-- <h2>Hello</h2> -->
+					<h1>吳秀陽 Shiow-Yang Wu</h1>
+					<h6>Professor</h6>
+					<ul class="address">
+						<li>
+							<ul class="address-text">
+								<li style="width: 0"></li>
+								<li>Department of Computer Science and Information Engineering<br>
+									National Dong Hwa University<br>
+									Hualien, Taiwan, R. O. C.
+								</li>
+							</ul>	
+						</li>
+						<li>
+							<ul class="address-text">
+								<li><b>TEL </b></li>
+								<li>+886-3-8634011, +886-3-8634020</li>
+							</ul>
+						</li>
+						<li>
+							<ul class="address-text">
+								<li><b>FAX </b></li>
+								<li>+886-3-8634010</li>
+							</ul>
+						</li>
+						<li>
+							<ul class="address-text">
+								<li><b>E-MAIL </b></li>
+								<li>showyang@mail.ndhu.edu.tw</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!--//banner-->
+	<!--top-nav-->
+	<div class="top-nav wow">
+		<div class="container">
+			<div class="navbar-header logo">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					Menu
+				</button>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<div class="menu">
+					<ul class="nav navbar">
+						<li><a href="#about" class="scroll">About</a></li>
+						<li><a href="#research" class="scroll">Research</a></li>
+						<li><a href="#publication" class="scroll">Publications</a></li>
+						<li><a href="#courses" class="scroll">Courses</a></li>
+						<li><a href="#students" class="scroll">Students</a></li>
+						<li><a href="http://pcdm.csie.ndhu.edu.tw/" target="_blank">PCDM Lab</a></li>
+						<li><a href="#family" class="scroll">Family</a></li>
+					</ul>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+	</div>	
+	<!--//top-nav-->
+
+	<div class="content">
+	<!--about-->
+	<div id="about" class="about">
+		<div class="container">
+			<h3 class="title"> About</h3>
+			<div class="col-md-8 col-md-offset-2">
+				<p>Dr. Shiow-yang Wu is a professor and chairman of the Department of Computer Science and Information Engineering at National Dong Hwa University, Hualien, Taiwan, ROC. He received the BS and MS degrees in computer engineering from National Chiao Tung University, Hsinchu, Taiwan, ROC, and the PhD degree in computer science from the University of Texas at Austin in 1984, 1986, and 1995, respectively. His research interests are cloud computing and big data processing, data & knowledge bases, mobile & pervasive computing, distributed processing, intelligence information systems and service computing.</p>
+			</div>
+		</div>
+	</div>
+	<!--//about-->
+	<!--Research-->
+	<div id="research" class="research">
+		<div class="container">
+			<h3 class="title">Research</h3>
+			<p>The goal of our research is to build <b>highly responsive intelligent information systems</b> to provide <b>pervasive information services</b> all the time, everywhere, on all varieties of data. The main research areas include <b>data & knowledge base systems</b> for information management, <b>cloud computing and big data systems</b> for high availability and scalability, <b>mobile & pervasive computing</b> for pervasive access, <b>parallel & distributed processing</b> for effective and real-time performance, <b>artificial intelligence techniques</b> for intelligent responses.  We have identified key enabling technologies among these fields as the building blocks for our research goal.  In particular, <b>mobile and cloud data management</b>, <b>big data analytics</b>, <b>dynamic coordination techniques</b>, <b>service oriented architecture</b>, as well as the <b>universal access and personalization</b> technologies are the foundations for providing advanced and ubiquitous information services to clients all the time, everywhere, by any means.  <b>Mobile data management</b>, <b>mobile cloud services</b>, <b>big data mining</b>, <b>RFID data management middleware</b>, <b>cross enterprise ECommerce</b> and <b>personalized information services</b> are selected as the main application domains for experimenting our ideas.
+			</p>
+			<h4 class="title center">Current Research</h4>
+			<div class="col-md-4 col-sm-6 portfolio-grids">
+				<figure data-toggle="modal" data-target="#modal-research-1">
+					<img src="images/research/mobile-data.png" alt="" class="img-responsive" />
+					<figcaption>
+						<h3>Mobile Data Management</h3>
+						<p>1998~now</p>
+					</figcaption>
+				</figure>
+			</div>
+			<div class="col-md-4 col-sm-6 portfolio-grids">
+				<figure data-toggle="modal" data-target="#modal-research-2">
+					<img src="images/research/cloud-service.png" alt="" class="img-responsive" />
+					<figcaption>
+						<h3>Mobile Cloud Services</h3>
+						<p>2013~now</p>	
+					</figcaption>
+				</figure>
+			</div>
+			<div class="col-md-4 col-sm-6 portfolio-grids">
+				<figure data-toggle="modal" data-target="#modal-research-3">
+					<img src="images/research/big-data.png" alt="" class="img-responsive" />
+					<figcaption>
+						<h3>Big Data Analytics</h3>
+						<p>2013~now</p>	
+					</figcaption>
+				</figure>
+			</div>
+			<div class="col-md-4 col-sm-6 portfolio-grids">
+				<figure data-toggle="modal" data-target="#modal-research-4">
+					<img src="images/research/rfid.png" alt="" class="img-responsive" />
+					<figcaption>
+						<h3>RFID Data Management Middleware</h3>
+						<p>2006~now</p>
+					</figcaption>
+				</figure>
+			</div>
+			<div class="col-md-4 col-sm-6 portfolio-grids">
+				<figure data-toggle="modal" data-target="#modal-research-5">
+					<img src="images/research/ecommerce.png" alt="" class="img-responsive" />
+					<figcaption>
+						<h3>Service Computing and ECommerce Applications</h3>
+						<p>2000~now</p>	
+					</figcaption>
+				</figure>
+			</div>
+			<div class="col-md-4 col-sm-6 portfolio-grids">
+				<figure data-toggle="modal" data-target="#modal-research-6">
+					<img src="images/research/sensor.png" alt="" class="img-responsive" />
+					<figcaption>
+						<h3>Mobile Sensor Networks</h3>
+						<p>2003~now</p>	
+					</figcaption>
+				</figure>
+			</div>
+			<div class="clearfix"> </div>
+			<h4 class="title center">Past Research</h4>
+			<div class="col-md-10 col-md-offset-1">
+				<ul class="page-list">
+					<li><a href="#" data-toggle="modal" data-target="#modal-research-7">Universal Access and Personalized Services (2001 ~ 2006)</a></li>
+					<li>Active Replication Scheme for Mobile Information Management (1997 ~ 1999)</li>
+					<li>Active Database Systems for Adaptive Mobile Computing (1996 ~ 1998)</li>
+					<li>Intelligent Agent Systems for Consumer-Oriented Electronic Commerce (1997 ~ 1998)</li>
+					<li>Intelligent Tutoring Systems for Computer Aided Learning in Mobile Environments (1996 ~ 1997)</li>
+					<li>Decomposition Abstraction in Parallel Rule Languages (1993 ~ 1996)</li>
+				</ul>
+			</div>
+
+			<!-- Modal fullscreen -->
+			<div class="modal modal-fullscreen fade" id="modal-research-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+			        <h3 class="modal-title" id="myModalLabel">Mobile Data Management (1998 ~ now)</h3>
+			      </div>
+			      <div class="modal-body">
+			        <h4>Research Abstract</h4>
+			        <div class="abstract">
+			        	<p>With the proliferation of portable devices and wireless communication technologies, providing quality and timely information services in mobile environments has been a major challenge to both hardware vendors and information system designers.  We select several key technologies as our primary research agenda which is expected to form the basis for a truly ubiquitous world.  We classify mobile information service domains based on feature characteristics of the information sources and different patterns of mobile information access.  By carefully examining the service requirements, we identify the dynamic data management problem that must be addressed for effective information services in mobile environments.  We then devise service architectures and cost models for servicing both location independent and location dependent data.  Based on the architectures and cost models, we propose dynamic data management strategies to reduce service cost and improve response time under changing user mobility and access patterns.  Detail behavior mining and pattern analysis helps us in precisely capturing when and how to apply these strategies.  Simulation results suggest that different strategies are effective for different types of data in response to different patterns of movement and information access.</p>
+					</div>
+					<h4>Research Topics</h4>
+					<ul>
+						<li>Activity-based proactive data management</li>
+						<li>Headlight prefetching and P2P media streaming in mobile environments</li>
+						<li>Active replication</li>
+						<li>Location based services</li>
+						<li>Intelligent adaptation</li>
+					</ul>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			<div class="modal modal-fullscreen fade" id="modal-research-2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+			        <h3 class="modal-title" id="myModalLabel">Mobile Cloud Services (2013 ~ now)</h3>
+			      </div>
+			      <div class="modal-body">
+			        <h4>Research Abstract</h4>
+			        <div class="abstract">
+				        <p>With the rapid development of hand-held devices/mobile computing technologies and the fast emerging cloud computing environments, the integration of mobile and cloud services is becoming the most promising trend in the coming years. From a recent report by Gartner, cloud computing, mobile-centric applications and interface, as well as media tablets are listed among the Top 10 Strategic Technologies. The forecast by IDC also indicates that mobile, cloud, and social networking are becoming the main stream in world IT market. ARCchart even predicts that by 2015, mobile generated contents will take up to 9,400PB (petabytes) of the cloud storage space. The common theme of these forecasts and predictions all point out the importance and high market potential of mobile cloud computing. However, the integration of the two technologies is far from straightforward. The CPU, memory, screen and other resources on mobile devices are relatively poor in comparison with their desktop counterparts. They are unlikely to be able to host all variety of cloud services smoothly. Another intrinsic characteristic of mobile networking is the intermittent disconnection and the need for disconnected operations. This is clearly against the always-on requirement of cloud services. It is therefore necessary to develop highly flexible mobile cloud service architecture and service management technologies to dynamically partition and seamless integrate the services among cloud, base stations and mobile devices. In particular, elastic service migration and seamless integration mechanisms are crucial for any high quality mobile cloud service platform. The goal of our research is to develop an elastic framework for highly dynamic service provisioning in mobile cloud environments. Service developers only need to provide necessary components for device-side mobile service interface and cloud-side service content, the framework provides automatic service compilation, multi-platform service generation and service deployment on different environments. End service users can smoothly access mobile cloud services by employing all available resources on all possible platforms including cloud data centers, base station servers, client devices, and even peer devices. More specifically, the main research topics include:</p>
+						<ul>
+			        		<li>Elastic framework for mobile cloud services: To extend the cloud services for executing on multiple environments and platforms. To empower mobile applications for easy access to cloud resources. To smoothly integrate mobile and cloud resources for seamless provisioning of mobile cloud services.</li>
+							<li>Development model and environment for dynamic mobile cloud services: To provide development model, programming interface, service library, and development environment for auto-compilation, multi-platform service generation and service deployment on different environments.</li>
+							<li>Dynamic service partitioning, downloading and coordination: This is to enable dynamic partitioning of a mobile cloud service among different entities of the service architecture based on user environment and service status. When the mobile connection is good and steady, we can leave most of the service in the cloud or server side. When the wireless bandwidth goes down or to deal with user mobility, we may need to download more service components on local store/base station servers or directly on the mobile device. The partitioned service components must be able to communicate and integration transparently and smoothly to provide the full service.</li>
+							<li>Elastic service migration and service prefetching: The partitioned service components must be downloaded to designated site or device. An ongoing service must be able to migrate to new location together with the movement of the user to maintain continuous service. The mobile cloud service framework must provide elastic support for the traveling of service components. This calls for reliable techniques for service state recording, service data packaging, service parameters transferring, service environment adjustment and the service continuation. In addition to on-demand service migration, we also plan to provide predictive service prefetching based on user behavior mining of service invocation patterns, data access patterns and location movement patterns.</li>
+							<li>Dynamic grouping and group management services: A particularly interesting type of services in mobile cloud environment is dynamic grouping and group management services. This is to dynamically form entity groups with common interests or based on some proximity properties. We are developing user-based P2P, base station coordinated, and cloud-based algorithms for group formation as well as group management services.</li>
+			        	</ul>
+						<p>With the seamless mobile cloud service environment, mobile users are no longer limited by their devices, networks and environments. Quality cloud services should be accessible to all users anytime everywhere. We use the idea of personal information management and the problem of spatial/temporal continuous media service as our test domains for technology validation and performance evaluation.</p>
+					</div>
+					<h4>Research Topics</h4>
+					<ul>
+						<li>Elastic framework for mobile cloud services</li>
+						<li>Development model and environment for dynamic mobile cloud services</li>
+						<li>Dynamic service partitioning, downloading and coordination</li>
+						<li>Elastic service migration and service prefetching</li>
+						<li>Seamless mobile cloud media streaming services</li>
+						<li>P2P group formation</li>
+						<li>Base station coordinated dynamic grouping</li>
+						<li>Dynamic group condition setting and target formation</li>
+					</ul>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			<div class="modal modal-fullscreen fade" id="modal-research-3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+			        <h3 class="modal-title" id="myModalLabel">Big Data Analytics (2013 ~ now)</h3>
+			      </div>
+			      <div class="modal-body">
+					<h4>Research Topics</h4>
+					<ul>
+						<li>Distributed algorithms for sequential pattern mining with MapReduce and Spark</li>
+						<li>Distributed algorithms for incremental mining of sequential patterns with MapReduce and Spark</li>
+						<li>Group assignment algorithms with MapReduce and Hama</li>
+					</ul>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			<div class="modal modal-fullscreen fade" id="modal-research-4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+			        <h3 class="modal-title" id="myModalLabel">RFID Data Management Middleware (2006 ~ now)</h3>
+			      </div>
+			      <div class="modal-body">
+					<h4>Research Topics</h4>
+					<ul>
+						<li>RFID data modeling</li>
+						<li>Dynamic Aggregate (DA) for QoS-aware elastic processing of distributed RFID data streams</li>
+						<li>Complex event processing for RFID data streams</li>
+						<li>RFID data management for smart home</li>
+						<li>Context-aware processing for smart home</li>
+					</ul>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			<div class="modal modal-fullscreen fade" id="modal-research-5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+			        <h3 class="modal-title" id="myModalLabel">Service Computing and ECommerce Applications (2000 ~ now)</h3>
+			      </div>
+			      <div class="modal-body">
+					<h4>Research Topics</h4>
+					<ul>
+						<li>Service architecture</li>
+						<li>Dynamic service composition</li>
+						<li>QoS aware service composition and workflow replanning</li>
+						<li>Dynamic AHP for dynamic decision making</li>
+					</ul>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			<div class="modal modal-fullscreen fade" id="modal-research-6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+			        <h3 class="modal-title" id="myModalLabel">Mobile Sensor Networks (2003 ~ now)</h3>
+			      </div>
+			      <div class="modal-body">
+					<h4>Research Topics</h4>
+					<ul>
+						<li>Mobile sensor network</li>
+						<li>Self-organization strategies for dynamic context coverage</li>
+						<li>Mobing target tracking in mobile sensor network</li>
+						<li>Dynamic data aggregation in mobile sensor network</li>
+					</ul>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			<div class="modal modal-fullscreen fade" id="modal-research-7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+			        <h3 class="modal-title" id="myModalLabel">Universal Access and Personalized Services (2001 ~ 2006)</h3>
+			      </div>
+			      <div class="modal-body">
+					<h4>Research Topics</h4>
+					<ul>
+						<li>Activity-based personalized search</li>
+						<li>Dynamic transcoding for universal access</li>
+					</ul>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			<!-- // Modal fullscreen -->
+		</div>
+	</div>
+	<!--//Research-->
+	<!--Publications-->
+	<div id="publication" class="publication">
+		<div class="container">
+			<h3 class="title">Publications</h3>
+			<h4 class="title">Journal Publications</h4>
+			<ol>
+				<li>
+				Hsiang-Jen Hong, Ge-Ming Chiu, <b>Shiow-yang Wu</b>, Tien-Ruey Hsiang and Tai-Lin Chin. <a href="">Patron Allocation for Group Services under Lower Bound Constraints.</a> <i><b>IEEE Transactions on Parallel and Distributed Systems</b></i>, accepted for publication, 2016.</li>
+				<li>
+				Wen-sheng Chen, Ying-Jun Chen and <b>Shiow-yang Wu</b>. <a href="http://dx.doi.org/10.1109/TPDS.2013.177" target="_blank">Dynamic Aggregate: An Elastic Framework for QoS-aware Distributed Processing of RFID Data on Enterprise Hierarchy.</a> <i><b>IEEE Transactions on Parallel and Distributed Systems</b></i>, 25(7):1724-1734, July 2014. (SCI, 2013 IF=1.796) <a href="http://dx.doi.org/10.1109/TPDS.2013.177" target="_blank">DOI:http://dx.doi.org/10.1109/TPDS.2013.177</a></li>
+				<li>
+				<b>Shiow-yang Wu</b> and Kuo-Chang Lin. <a href="http://dx.doi.org/10.1016/j.eswa.2010.12.121" target="_blank">Structured Design, Consistency Analysis and Failure Reasoning of Business Workflows with Activity-Control Templates and Causal Ordering.</a> <i><b>Expert Systems with Applications</b></i>, 38(7):8000-8013 , July 2011. (SCI, 2011 IF=1.926) <a href="http://dx.doi.org/10.1016/j.eswa.2010.12.121" target="_blank">DOI:
+				http://dx.doi.org/10.1016/j.eswa.2010.12.121</a></li>
+				<li>
+				<b>Shiow-yang Wu</b> and Cheng-en He. <a href="http://doi.ieeecomputersociety.org/10.1109/TPDS.2010.81" target="_blank">QoS-Aware Dynamic Adaptation for Cooperative Media Streaming in Mobile Environments.</a> <b><i>IEEE Transactions on Parallel and Distributed Systems</i></b>, 22(3):439-450, Mar 2011. (SCI, 2011 IF=1.575) <a href="http://doi.ieeecomputersociety.org/10.1109/TPDS.2010.81" target="_blank">DOI:
+				http://doi.ieeecomputersociety.org/10.1109/TPDS.2010.81</a></li>
+				<li>
+				<b>Shiow-yang Wu</b> and Hsiu-Hao Fan. <a href="http://doi.ieeecomputersociety.org/10.1109/TMC.2009.139" target="_blank">Activity-Based Proactive Data Management in Mobile Environments.</a> <b><i>IEEE Transactions on Mobile Computing</i></b>, 9(3):390-404, Mar 2010. (SCI, 2010 IF=2.647)</li>
+				<li>
+				<b>Shiow-yang Wu</b> and Shih-Chien Chou. <a href="http://www.iis.sinica.edu.tw/page/jise/2009/200911_16.html" target="_blank">Preventing Information Leakage in Mobile Applications with Object-Oriented Access Control Lists and Security Monitor Encapsulation.</a> <b><i>Journal of Information Science and Engineering</i></b>, 25(6):1921-1937, Nov 2009. (SCI, 2009 IF=0.315)</li>
+				<li>
+				<b>Shiow-yang Wu</b>, Jungchu Hsu and Chieh-ming Chen. <a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?isnumber=4731215&arnumber=4585384&count=15&index=4" target="_blank">Headlight Prefetching and Dynamic Chaining for Cooperative Media Streaming in Mobile Environments.</a> <b><i>IEEE Transactions on Mobile Computing</i></b>, 8(2):173-187, Feb 2009. (SCI, 2009 IF=2.647)</li>
+				<li>
+				<b>吳秀陽</b>、謝至斌，<a href="http://jeb.cerps.org.tw/files/JEB2008-002.pdf" target="_blank">
+				以XML與動態代理人為基礎之跨企業電子商務架構與交易處理</a>，<b>《電子商務學報》</b>，10(1):27-61，Mar. 2008。(TSSCI)</li>
+				<li>
+				<b>Shiow-yang Wu</b>, Chun-Shun Chang, Shih-Hsun Ho and Hung-Shun Chao. <a href="http://dx.doi.org/10.1016/j.eswa.2006.12.014" target="_blank">Rule-Based Intelligent Adaptation in Mobile Information Systems.</a> <b><i>Expert Systems with Applications</i></b> 34(2):1078-1092, Feb. 2008. (SCI, 2008 IF=2.596)</li>
+				<li>
+				<b>Shiow-yang Wu</b> and Yu-tse Chang. <a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?isnumber=35972&arnumber=1704823&count=11&index=9" target="_blank">A User-Centered Approach to Active Replica Management in Mobile Environments.</a> <b><i>IEEE Transactions on Mobile Computing</i></b> 5(11):1606-1619, Nov. 2006. (SCI, 2006 IF=2.550)</li>
+				<li>
+				<b>Shiow-yang Wu</b> and Jun-Hsong Huang. <a href="http://jit.ndhu.edu.tw/jitcontent.php?getserial=301" target="_blank">Focus Based Resource-Aware Semantic Transcoding for Universal Access.</a> <b><i>Journal of Internet Technologies</i></b> 7(4):353-363, Oct. 2006. (EI)</li>
+				<li>
+				<b>Shiow-yang Wu</b> and Kun-Ta Wu. <a href="http://www.springerlink.com/content/7p76617716487558/?p=8c6f935040844173a4cd30fde0ec9cc7&pi=1" target="_blank">Effective Location Based Services with Dynamic Data Management in Mobile Environments.</a> <b><i>Wireless Networks</i></b> 23(3):369-381, June 2006. (SCI, 2006 IF=0.812)</li>
+				<li>
+				<b>Shiow-yang Wu</b>, Daniel P. Miranker, and James C. Browne. <a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?isnumber=11888&arnumber=544357&count=6&index=3" target="_blank">Decomposition
+				Abstraction in Parallel Rule Languages.</a> <b><i>IEEE Transactions on Parallel and Distributed Systems</i></b>, 7(11): 1164-1184, Nov. 1996. (SCI)</li>
+			</ol>
+			<h4 class="title">Conference Publications</h4>
+			<ol>
+				<li>
+				Yen-hui Liang and <b>Shiow-yang Wu</b>. <a href="Publications/2015BigDataCongress.pdf" target="_blank">Sequence-Growth : A Scalable and Effective Frequent Itemset Mining Algorithm for Big Data Based on MapReduce Framework</a>. <i>IEEE BigData 2015: 4th International Congress on Big Data</i>, Taipei Satellite Session, May 15-16, 2015.</li>
+				<li>
+				Yun-Ning Liu and <b>Shiow-yang Wu</b>. <a href="Publications/2015eCASEeTech.pdf" target="_blank">A Dynamic Calculation Method for AHP in Unexpected Environments</a>. <i>e-CASE & e-Tech 2015: International Conference on e-Commerce, e-Administration, e-Society, e-Education, and e-Technology</i>, Kuala Lumpur, Malaysia, April 13, 2015.</li>
+				<li>
+				Yun-Ning Liu and <b>Shiow-yang Wu</b>. <a href="Publications/2013eCASEeTech.pdf" target="_blank">Using Normalization and AHP for Improving Supplier Selection Process in Steel Bars Industry</a>. <i>e-CASE & e-Tech 2013: International Conference on e-Commerce, e-Administration, e-Society, e-Education, and e-Technology</i>, Kitakyushu, Japan, April 3-5, 2013.</li>
+				<li>
+				Kuo-chu Wu, Wei-y Liu, <b>Shiow-yang Wu</b>. <a href="Publications/2012ieeeAPCloudCC.pdf" target="_blank">Development Model and Environment for Dynamic Mobile Cloud Services</a>. <i>APCloudCC 2012: IEEE Asia Pacific Cloud Computing Congress</i>, 2012.</li>
+				<li>
+				Chi-Ming Ma, Tai-Jung Wu, <b>Shiow-yang Wu</b>. <a href="Publications/2012ieeeSOCA.pdf" target="_blank">A Rule-based Approach for Dynamic Adaptation of Service Flow</a>. <i>SOCA 2012: 5th IEEE International Conference on Service-Oriented Computing and Applications</i>, 2012.</li>
+				<li>
+				沈惟嘉、馬啟銘、<b>吳秀陽</b>. <a href="Publications/2007NCS.pdf" target="_blank">服務關聯性導向之服務品質計算與網路服務組合</a>. <i>NCS 2007: National Computer Symposium, 全國計算機會議</i>, 2007. (Web Services and Service Oriented Architecture 組佳作)</li>
+				<li>
+				<b>Shiow-yang Wu</b>, Jungchu Hsu and Chieh-Ming Chen. <a href="Publications/2007MobiDE.pdf" target="_blank">Headlight Prefetching for Mobile Media Streaming</a>. <i>MobiDE 2007: 6th International ACM Workshop on Data Engineering for Wireless and Mobile Access</i>, Beijing, China, June 10th, 2007.</li>
+				<li>
+				<b>Shiow-yang Wu</b>, Chao-Hong Liu and Chen-Kuang Tzeng. <a href="Publications/2006ieeeSUTC.pdf" target="_blank">Self-organization Strategies for Dynamic Context Coverage in Capability-Constrained Mobile Sensor Networks</a>. <i>IEEE SUTC 2006: The IEEE International Conference on Sensor Networks, Ubiquitous, and Trustworthy Computing</i>, Taichung, Taiwan, June 5-7, 2006.</li>
+				<li>
+				<b>Shiow-yang Wu</b> and Kuo-Chang Lin. <a href="Publications/2005ieeeCEC.pdf" target="_blank">Cross Enterprise Business Modeling with AC Diagrams and Workflow Patterns</a>. <i>IEEE CEC 2005: 7th International IEEE Conference on E-Commerce Technology</i>, Munich, Germany, July 19-22, 2005. NSC93-2213-E-259-012</li>
+				<li>
+				謝至斌, 吳秀陽. <a href="Publications/2005ncs.pdf" target="_blank">基於XML與動態代理人技術之跨企業電子商務交易系統.</a> <i>NCS2005: 2005年全國計算機會議(National Computer Symposium)</i>, Dec 15-16, 2005. NSC91-2213-E-259-017</li>
+				<li>
+				黃俊雄, 吳秀陽. <a href="Publications/2005taai.pdf" target="_blank">支援通用存取之使用者意向聚焦與資源感知語意轉形.</a> <i>TAAI2005: 第十屆人工智慧與應用研討會(The 10th Conference on Artificial Intelligence and Applications)</i>, Dec 2-3, 2005. NCS92-2213-E-259-010 NCS93-2213-E-259-012</li>
+				<li>
+				<b>Shiow-yang Wu</b> and Wai-chun Ko. <a href="Publications/2004pdcs.pdf" target="_blank">Location Based Access to Moving Data Sources</a>. <i>PDCS2004: 17th International Conference on Parallel and Distributed Computing Systems</i>, San Francisco, CA, USA, September 15-17, 2004.</li>
+				<li>
+				<b>Shiow-yang Wu</b> and Kun-Ta Wu. <a href="Publications/2003ideas.pdf" target="_blank">Dynamic Data Management for Location Based Services in Mobile Environments</a>. <i>IDEAS2003: The 7th International Database Engineering and Application Symposium</i>, pages 180-189, Hong Kong, July 16-18, 2003.</li>
+				<li>
+				<b>Shiow-yang Wu</b> and Wen-Shen Chen. <a href="Publications/2002vdb6.pdf" target="_blank">Oral-Query-by-Sketch: An XML-based Framework for Speech Access to Image Databases</a>. <i>VDB6: The 6th IFIP Working Conference on Visual Database Systems</i>, pages 341-355, Brisbane, Australia, 29-31 May 2002.</li>
+				<li>
+				<b>Shiow-yang Wu</b> and H.S.Cinatit Chao. <a href="Publications/2001mdm.pdf" target="_blank">Event Engine for Adaptive Mobile Computing</a>. <i>MDM'2001: Second International Conference on Mobile Data Management</i>, pages 27-38, Hong Kong, January 8-10, 2001. Also in Kian-Lee Tan and Michael J. Franklin and John Chi-Shing Lui (Eds.) <i>Mobile Data Management</i>, LNCS 1987, pages 27-38, Springer-Verlag, 2001.</li>
+
+				<li>
+				<b>Shiow-yang Wu</b> and Yi-Sen Eu. <a href="Publications/2000immcn.pdf" target="_blank">Intelligent Caching for Mobile Web Browsing</a>. <i>IMMCN'2000: First International Workshop on Intelligent Multimedia Computing and Networking, JCIS'2000: The Fifth Joint Conference on Information Sciences</i>. Volume 2, pages 628-631, Atlantic City, New Jersey, USA, 2000.</li>
+
+				<li>
+				<b>Shiow-yang Wu</b> and Ching-Sun Lee. <a href="Publications/2000tanet.pdf" target="_blank">以使用者側寫,文件結構及伺服器端提示為基礎之行動網際網路資訊預取</a>. TANET2000: 二000台灣區網際網路研討會,
+				2000.</li>
+
+				<li>
+				<b>Shiow-yang Wu</b> and Shih-Hsun Ho. <a href="Publications/1999mda.pdf" target="_blank">Active
+				Rule System for Adaptive Mobile Data Access</a>. <i>The First International
+				Conference on Mobile Data Access</i>, pages 146-155, Hong Kong, China, 1999.</li>
+
+				<li>
+				<b>Shiow-yang Wu </b>and Yu-tse Chang. <a href="Publications/1999dasfaa.pdf" target="_blank">An
+				Active Replication Scheme for Mobile Data Management</a>. <i>Proc. DASFAA'99:
+				6th International Conference on Database Systems for Advanced Applications</i>,
+				pages 143--150, 1999.</li>
+
+				<li>
+				<b>Shiow-yang Wu</b> and H.S.Cinatit Chao. <a href="Publications/1999ncs.zip" target="_blank">支援適應性行動計算之事件引擎</a>.
+				NCS'99:中華民國八十八全國計算機會議. pages C-480 ~ C-485, Taiwan, 1999.</li>
+
+				<li>
+				<b>Shiow-yang Wu </b>and Hsin-Chih Chiang. <a href="Publications/1999tanet.zip" target="_blank">智慧型代理人在多元件產品仲介上之應用</a>.
+				TANET'99: 一九九九台灣區網際網路研討會, A4.5, 1999.</li>
+
+				<li>
+				<b>Shiow-yang Wu</b> and Hsin-Chih Chiang. <a href="Publications/1999atworkshop.zip" target="_blank">Intelligent
+				Agent Team for Consumer-Oriented Electronic Commerce</a>. <i>ATWork'99:
+				Agent Technology Workshop</i>, Taiwan, 1999. (in Chinese)</li>
+
+				<li>
+				<b>Shiow-yang Wu</b> and Chun-Shun Chang. <a href="Publications/1998wmda.ps" target="_blank">An
+				Active Database Framework for Adaptive Mobile Data Access</a>. <i>Workshop
+				on Mobile Data Access, 17th International Conference on Conceptual Modeling</i>, Singapore, 1998. Also in Yahiko Kambayashi, Dik Lun Lee, Ee-Peng Lim, Mukesh Kumar Mohania, and Yoshifumi Masunaga (Eds.) <i>Advances in Database Technologies</i>, LNCS 1552, pages 335-346, Springer-Verlag, 1999.</li>
+
+				<li>
+				<b>Shiow-yang Wu</b> and Shih-Hsun Ho. Predictive Caching and Prefetching
+				for Mobile Rule Processing. <i>Proc. The 4th Mobile Computing Workshop,</i>
+				pages 78-85, 1998.</li>
+
+				<li>
+				<b>Shiow-yang Wu </b>and Yu-tse Chang. <a href="Publications/1998TANET/tanet98.htm" target="_blank">支援行動資訊管理之主動式資料複製演算法</a>.
+				TANET'98: 一九九八台灣區網際網路研討會, 5A-1 ~ 5A-15, 1998.</li>
+
+				<li>
+				<b>Shiow-yang Wu</b> and Chun-Shun Chang. A Modular Framework for Building
+				Adaptive Mobile Information Systems.&#160;&#160; 一九九八分散式系統技術及應用研討會.</li>
+
+				<li>
+				<b>Shiow-yang Wu</b> Intelligent Agents for Heterogeneous Information
+				Integration. <i>ATWork97: Agent Technology Workshop,</i> 1997. (presentation)</li>
+
+				<li>
+				Chen, Hsu-Jun and <b>Shiow-yang Wu</b>. <a href="Publications/1997ICCAI.zip" target="_blank">The
+				Application of Mobile Computing Technologies in Computer-Aided Learning.</a><i>Proc.
+				ICCAI'97: International Conference on Computer Assisted Instruction,</i>
+				pp. 391-398, 1997. (in Chinese)</li>
+
+				<li>
+				<b>Shiow-yang Wu</b>. <a href="Publications/1996ics.ps.gz" target="_blank">Parallel Programming of Rule-Based Systems with Decomposition Abstraction.</a> In
+				<i>ICS'96: International Computer Symposium, Proc. Intl. Conf. on Artificial Intelligence</i>, pages 248-255, 1996.</li>
+
+				<li>
+				<b>Shiow-yang Wu</b>. <a href="Publications/UT-CS-TR-95-33.ps.gz" target="_blank">Decomposition
+				Abstraction in Parallel Rule Languages.</a> PhD thesis, Department of Computer
+				Sciences, University of Texas at Austin, 1995. Also appeared as Technical
+				Report TR-95-33.</li>
+
+				<li>
+				<b>Shiow-yang Wu</b>, Daniel P. Miranker, and James C. Browne. <a href="http://www.csie.ndhu.edu.tw/~showyang/Publications/1994icpads.pdf" target="_blank">Toward
+				Semantic-Based Parallelism in Production Systems.</a> <i>Proc. ICPADS'94:
+				International Conference on Parallel and Distributed Systems</i>, pages
+				752-758, 1994.</li>
+
+				<li>
+				<b>Shiow-yang Wu</b>, Daniel P. Miranker, and James C. Browne. <a href="http://www.csie.ndhu.edu.tw/~showyang/Publications/UT-CS-TR-94-23.ps.gz" target="_blank">Toward
+				Semantic-Based Exploration of Parallelism in Production Systems.</a> Technical
+				Report TR-94-23, Department of Computer Sciences, University of Texas at
+				Austin, 1994.</li>
+
+				<li>
+				<b>Shiow-yang Wu</b> and James C. Browne. <a href="http://www.csie.ndhu.edu.tw/~showyang/Publications/1993ipps.pdf" target="_blank">Explicit
+				Parallel Structuring for Rule Based Programming.</a> <i>Proc. IPPS'93:
+				International Parallel Processing Symposium</i>, pages 479-488, 1993.</li>
+
+				<li>
+				Cobb, Jorge A., <b>Shiow-yang Wu</b>, and Daniel P. Miranker. Skew Insensitive
+				Parallel Join with Sampling. Technical Report TR-91-35, Department of Computer
+				Sciences, University of Texas at Austin, 1991.</li>
+
+				<li>
+				Mooney, Raymond, Dirk Ourston, and <b>Shiow-yang Wu</b>. Induction Over
+				the Unexplained: A New Approach to Combining Empirical and Explanation-Based
+				Learning. Technical Report AI-89-110, Department of Computer Sciences,
+				University of Texas at Austin, 1989.</li>
+
+				<li>
+				<b>Shiow-yang Wu</b>, C. H. Wei, and S. H. Hwang. Menu Planning Expert
+				Systems. <i>Proc. ICS'86: International Computer Symposium</i>, pages 1847-1857, 1986.</li>
+			</ol>
+
+			<h4 class="title">Others</h4>
+			<ol>
+				<li>吳秀陽. <a href="Publications/music-computer-ai.doc" target="_blank">音樂、電腦、與人工智慧.</a>
+					國立東華大學圖書館月眉書訊.</li>
+			</ol>
+
+		</div>
+	</div>
+	<!--//Publications-->
+	<!--Courses-->
+	<div id="courses" class="courses">
+		<div class="container">
+			<h3 class="title">Courses</h3>
+			<h4 class="title">Current Semester</h4>
+			<ul class="current">
+				<li><b><a href="http://web.csie.ndhu.edu.tw/showyang/DistrSys2017s/index.html">
+			 	CSCSIE52400 Distributed Systems, Spring 2017</a></b></li>
+			</ul>
+
+			<h4 class="title">Graduate Courses</h4>
+			<ul>
+				<li><b><a href="http://www.csie.ndhu.edu.tw/~showyang/BigDataSys2015s/index.html">
+				CSIE59830 Big Data Systems, Spring 2015</a></b></li>
+				<li><b><a href="http://www.csie.ndhu.edu.tw/~showyang/BigDataSys2013f/index.html">
+				CSIE59830 Big Data Systems, Fall 2013</a></b></li>
+				<li><b><a href="http://www.csie.ndhu.edu.tw/~showyang/DistrSys2013s/index.html">
+				CSIE52400 Distributed Systems, Spring 2013</a></b></li>
+				<li><b><a href="http://www.csie.ndhu.edu.tw/~showyang/MCloud2012/index.html">
+				CSIEM0070 Advanced Database Systems: Mobile Cloud Computing, Spring 2012</a></b></li>
+				<li><b><a href="http://www.csie.ndhu.edu.tw/~showyang/SNA2011f/index.html">
+				CSIE50400 Data and Knowledge Base Systems: Social Network Analysis, Fall 2011</a></b></li>
+				<li><b><a href="http://www.csie.ndhu.edu.tw/~showyang/DistrSys2011s/index.html">
+				CSIE52400 Distributed Systems, Spring 2011</a></b></li>
+				<li><b><a href="http://www.csie.ndhu.edu.tw/~showyang/Cloud2010f/index.html">
+				CSIE51800 Advanced Database Systems: Cloud Data Management, Fall 2010</a></b></li>
+				<li><b><a href="http://www.csie.ndhu.edu.tw/~showyang/DistrSys2010s/index.html">
+				CSIE52400 Distributed Systems, Spring 2010</a></b></li>
+				<li><b><a href="http://www.csie.ndhu.edu.tw/~showyang/PerCom2009f/index.html">
+				CSIE54600 Pervasive Computing, Fall 2009</a></b></li>
+				<li><b><a href="http://www.csie.ndhu.edu.tw/~showyang/DistrSys2009s/index.html">
+				CSIE52400 Distributed Systems, Spring 2009</a></b></li>
+				<li><b><a href="http://www.csie.ndhu.edu.tw/~showyang/SOC2008/index.html">
+				CSIE50400 Data and Knowledge Base Systems: Service-Oriented Computing, Fall 2008</a></b></li>
+				<li><b><a href="http://www.csie.ndhu.edu.tw/~showyang/PerCom2008s/index.html">
+				CSIE54600 Pervasive Computing, Spring 2008</a></b></li>
+				<li><b><a href="http://www.csie.ndhu.edu.tw/~showyang/DistrSys2007f/index.html">
+				CSIE52400 Distributed Systems, Fall 2007</a></b></li>
+				<li><b><a href="http://www.csie.ndhu.edu.tw/~showyang/DSMS2007s/index.html">
+				CSIE50400 Data and Knowledge Base Systems: Data Stream Management Systems, Spring 2007</a></b></li>
+				<li><b><a href="http://www.csie.ndhu.edu.tw/~showyang/PerCom2006f/index.html">
+				CSIE54600 Pervasive Computing, Fall 2006</a></b></li>
+				<li><b><a href="http://www.csie.ndhu.edu.tw/~showyang/DistrSys2006s/index.html">
+				CSIE52400 Distributed Systems, Spring 2006</a></b></li>
+				<li><b><a href="http://www.csie.ndhu.edu.tw/~showyang/WebInfoSys2005f/index.html">
+				CSIE50400 Data and Knowledge Base Systems: Web Information Systems, Fall 2005</a></b></li>
+				<li><b><a href="http://www.csie.ndhu.edu.tw/~showyang/PerCom2005s/index.html">
+				CSIE51800 Advanced Database Systems: Mobile and Pervasive Computing, Spring 2005</a></b></li>
+				<li><b><a href="http://www.csie.ndhu.edu.tw/~showyang/DistrSys2004f/index.html">
+				CSIE52400 Distributed Systems, Fall 2004</a></b></li>
+				<li><b><a href="http://www.csie.ndhu.edu.tw/~showyang/PerCom2003f/index.html">
+				CSIE51800 Advanced Database Systems: Mobile and Pervasive Computing, Fall 2003</a></b></li>
+				<li><b><a href="http://www.csie.ndhu.edu.tw/~showyang/DistrSys2003s/index.html">
+				CSIE52400 Distributed Systems, Spring 2003</a></b></li>
+				<li><b><a href="http://www.csie.ndhu.edu.tw/~showyang/XML2002f/index.html">
+				CSIE51800 Advanced Database Systems: XML Database and the Semantic Web, Fall 2002</a></b></li>
+			</ul>
+
+			<h4 class="title">Undergraduate Courses</h4>
+			<ul type=disc>
+				<li><b><a href="http://web.csie.ndhu.edu.tw/showyang/DS2016f/index.html">
+				CSIEB0100 Data Structures, Fall 2016</a></b></li>
+				<li><b><a href="http://web.csie.ndhu.edu.tw/showyang/DB2016s/index.html">
+				CSIE30600 Database Systems, Spring 2016</a></b></li>
+				<li><b><a href="http://web.csie.ndhu.edu.tw/showyang/DS2015f/index.html">
+				CSIEB0100 Data Structures, Fall 2015</a></b></li>
+				<li><b><a href="http://www.csie.ndhu.edu.tw/~showyang/DS2014f/index.html">
+				CSIEB0100 Data Structures, Fall 2014</a></b></li>
+				<li><b><a href="http://www.csie.ndhu.edu.tw/~showyang/IR2014s/index.html">
+				CSIE33700/CSIEB0210 Information Retrieval, Spring 2014</a></b></li>
+				<li><b><a href="http://www.csie.ndhu.edu.tw/~showyang/DB2013f/index.html">
+				CSIE30600 Database Systems, Fall 2013</a></b></li>
+				<li><b><a href="http://www.csie.ndhu.edu.tw/~showyang/OOP2012/index.html">
+				CSIEB0040 Introduction to Computer Programming II, Fall 2012</a></b></li>
+				<li><b><a href="http://www.csie.ndhu.edu.tw/~showyang/ProgrammingI2011f/index.html">
+				CSIEB0020 Introduction to Computer Programming I, Fall 2011</a></b></li>
+				<li><b><a href="http://www.csie.ndhu.edu.tw/~showyang/DB2010f/index.html">
+				CSIE30600 Database Systems, Fall 2010</a></b></li>
+				<li><b><a href="http://www.csie.ndhu.edu.tw/~showyang/NetProg2009f/index.html">
+				CSIE33000 Network Programming, Fall 2009</a></b></li>
+				<li><b><a href="http://www.csie.ndhu.edu.tw/~showyang/DB2009s/index.html">
+				CSIE30600 Database Systems, Spring 2009</a></b></li>
+				<li><b><a href="http://www.csie.ndhu.edu.tw/~showyang/NetProg2008/index.html">
+				CSIE33000 Network Programming, Fall 2008</a></b></li>
+				<li><b><a href="http://www.csie.ndhu.edu.tw/~showyang/DB2008s/index.html">
+				CSIE30600 Database Systems, Spring 2008</a></b></li>
+				<li><b><a href="http://www.csie.ndhu.edu.tw/~showyang/IR2007f/index.html">
+				CSIE33700 Information Retrieval, Fall 2007</a></b></li>
+				<li><b><a href="http://www.csie.ndhu.edu.tw/~showyang/DB2007s/index.html">
+				CSIE30600 Database Systems, Spring 2007</a></b></li>
+				<li><b><a href="http://www.csie.ndhu.edu.tw/~showyang/ProgrammingI2006f/index.html">
+				CSIE10400 Programming I, Fall 2006</a></b></li>
+				<li><b><a href="http://www.csie.ndhu.edu.tw/~showyang/AdvDB2006f/index.html">
+				IM41300 ¸ê®Æ®w¶i¶¥, Fall 2006</a></b></li>
+				<li><b><a href="http://www.csie.ndhu.edu.tw/~showyang/IR2006s/index.html">
+				CSIE33700 Information Retrieval, Spring 2006</a></b></li>
+				<li><b><a href="http://www.csie.ndhu.edu.tw/~showyang/DB2005f/index.html">
+				CSIE30600 Database Systems, Fall 2005</a></b></li>
+				<li><b><a href="http://www.csie.ndhu.edu.tw/~showyang/OOP2005s/index.html">
+				CSIE10400 Programming II (Object-Oriented Programming in C++), Spring 2005</a></b></li>
+				<li><b><a href="http://www.csie.ndhu.edu.tw/~showyang/ProgrammingI2004f/index.html">
+				CSIE10500 Programming I, Fall 2004</a></b></li>
+				<li><b><a href="http://www.csie.ndhu.edu.tw/~showyang/NetProg2004s/index.html">
+				CSIE33000 Network Programming, Spring 2004</a></b></li>
+				<li><b><a href="http://www.csie.ndhu.edu.tw/~showyang/OOP2004s/index.html">
+				CSIE10400 Programming II (Object-Oriented Programming in C++), Spring 2004</a></b></li>
+				<li><b><a href="http://www.csie.ndhu.edu.tw/~showyang/Programming2003f/index.html">
+				CSIE10500 Programming I, Fall 2003</a></b></li>
+				<li><b><a href="http://www.csie.ndhu.edu.tw/~showyang/AdvProg2003s/index.html">
+				CSIE30800 Advanced Programming Concepts Using Java, Spring 2003</a></b></li>
+				<li><b><a href="http://www.csie.ndhu.edu.tw/~showyang/DB2002f/index.html">
+				CSIE30600 Database Systems, Fall 2002</a></b></li>
+				<li><b><a href="Programming1999f/index.html">
+				CSIE1060A Introduction to Computer Science (for Engineering and Science Majors), Fall 2001</a></b></li>
+				<li><b><a href="AdvProgramming2001s/index.html">
+				CSIE30800 Advanced Programming Concepts Using Java, Spring 2001)</a></b></li>
+			</ul>
+
+		</div>
+	</div>
+	<!--//Courses-->
+	<!--Students-->
+	<div id="students" class="portfolio">
+		<div class="container">
+			<h3 class="title">Students</h3>
+			<!-- <h4 class="title center">Current Students</h4>
+			<ul>
+				<li>Peter Wu</li>
+				<li>Machael Huang</li>
+				<li>David Liao</li>
+			</ul> -->
+			<div style="text-align: center; margin-top: 40px">
+				<button class="btn btn-primary" data-toggle="modal" data-target="#modal-students">
+					See All Students
+				</button>
+			</div>
+		</div>
+		<div class="modal modal-fullscreen fade" id="modal-students" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+		        <h3 class="modal-title" id="myModalLabel">Students of Shiow-yang Wu</h3>
+		      </div>
+		      <div class="modal-body">
+		        <h4>PhD Students and Theses</h4>
+		 		<ul>
+					<li>陳文盛, 基於服務品質感知動態整合與應用導向事件處理之RFID資料管理研究, 2015
+						<span class="thesis-en">(QoS-aware Dynamic Aggregation and Application-centered Event Processing for RFID Data Management)</span>
+					</li>
+					<li>馬啟銘, <span class="thesis-en"></span></li>
+					<li>吳國柱, <span class="thesis-en"></span></li>
+					<li>劉妘鑏, <span class="thesis-en"></span></li>
+					<li>梁燕慧, <span class="thesis-en"></span></li>
+				</ul>
+				<h4>Master Students and Theses</h4>
+				<ul class="master-list">
+					<li><span class="year">2015</span>
+						<ul>
+							<li>周信嶢, 以三層式Tuple Space架構為基礎之情境感知處理機制與智慧家居應用
+								<span class="thesis-en">(A Three-Layered Tuple Space Architecture for Context-Aware Processing with Smart Home Applications)</span>
+							</li>
+							<li>陳奕龍,
+								<span class="thesis-en">()</span>
+							</li>
+							<li>許國宏,
+								<span class="thesis-en">()</span>
+							</li>
+						</ul>
+					</li>
+					<li><span class="year">2014</span>
+						<ul>
+							<li>林緯恩, 基於Apache Hama之動態群組形成演算法研究
+								<span class="thesis-en">(Algorithms for Dynamic Group Formation on Apache Hama)</span>
+							</li>
+							<li>黃厚淇, 行動雲端計算環境中服務模組之彈性執行與動態遷徙研究
+								<span class="thesis-en">(Elastic Execution and Dynamic Migration of Service Modules in Mobile Cloud Computing Environments)</span>
+							</li>
+						</ul>
+					</li>
+					<li><span class="year">2013</span>
+						<ul>
+							<li>黃安德, 基於Hadoop的動態群組形成之集中式和MapReduce演算法研究
+								<span class="thesis-en">(Centralized and MapReduce Algorithms for Dynamic Group Formation on Hadoop)</span>
+							</li>
+							<li>林峻暉, 行動雲端計算環境中支援彈性服務執行之模組佈置最佳化研究
+								<span class="thesis-en">(Optimal Components Allocation for Elastic Service Provisioning in Mobile Cloud Computing Environments)</span>
+							</li>
+							<li>鄭世偉, 行動感測網路中目標位置動態預測機率模型與多重目標追蹤監控
+								<span class="thesis-en">(A Probability Model for Dynamic Target Location Prediction and Multi-Target Tracking in Mobile Sensor Networks)</span>
+							</li>
+							<li>林芳如, 休學
+								<span class="thesis-en">()</span>
+							</li>
+							<li>Sambou Dibba, Opportunistic Data Aggregation by Distance Counting for Moving Target Tracking in Mobile Sensor Network
+								<span class="thesis-en">()</span>
+							</li>
+						</ul>
+					</li>
+					<li><span class="year">2012</span>
+						<ul>
+							<li>杜佩樺, 行動感測網路中多重目標監控之團隊合作式追蹤策略
+								<span class="thesis-en">(Cooperative Tracking for Multi-Target Tracking in Mobile Sensor Networks)</span>
+							</li>
+							<li>劉韋驛, 動態行動雲端服務的彈性執行架構與開發模式
+								<span class="thesis-en">(Elastic Execution Architectures and Development Models for Dynamic Mobile Cloud Services)</span>
+							</li>
+							<li>張盈均, 行動環境中之動態點對點群組形成與團購管理
+								<span class="thesis-en">(P2P Group Formation for Dynamic Purchasing Consortium in Mobile Environments)</span>
+							</li>
+							<li>翁茂峰, 基地台間點對點合作式群組形成與動態管理服務
+								<span class="thesis-en">(Base Station Coordinated Dynamic Grouping and Group Management Service)</span>
+							</li>
+						</ul>
+					</li>
+					<li><span class="year">2011</span>
+						<ul>
+							<li>林冠良, 針對RFID包含關係與趨勢樣式偵測之複雜事件處理
+								<span class="thesis-en">(Containmentship and Tendency Pattern Detection for Complex Event Processing in RFID Applications)</span>
+							</li>
+							<li>陳吉國, 數位家庭環境中以服務樣版為基礎之靜態服務塑型與動態服務組合
+								<span class="thesis-en">(Template Based Static Service Instantiation and Dynamic Service Composition in Smart Home)</span>
+							</li>
+							<li>陳郁婷, 以點對點合作式服務叢集為中心之數位家庭服務管理架構
+								<span class="thesis-en">(Peer-to-Peer Coordinated Service Clusters for Service Management in Digital Home)</span>
+							</li>
+							<li>張瑋恩,
+								<span class="thesis-en">()</span>
+							</li>
+							<li>蘇靖翔, 數位家庭服務排程之資源配置與衝突解決策略
+								<span class="thesis-en">(Resource Allocation and Conflict Resolution for Service Scheduling in Smart Home)</span>
+							</li>
+							<li>鄭巧玟, RFID文件流程控管服務元件與校園文件流程自動化系統應用
+								<span class="thesis-en">(RFID Document Flow Control Service Components and Automated Management System Application for Campus Document Process)</span>
+							</li>
+						</ul>
+					</li>
+					<li><span class="year">2010</span>
+						<ul>
+							<li>朱振伸, 行動感測網路中多重目標監控之協同換班、追蹤與資料整合策略
+								<span class="thesis-en">(Collaborative Shifting, Tracking and Information Aggregation for Multi-Target Tracking in Mobile Sensor Networks)</span>
+							</li>
+							<li>李玠峰, 數位家庭環境中建構普適服務之服務接適器
+								<span class="thesis-en">(Service Adapters for Pervasive Services in Digital Home)</span>
+							</li>
+							<li>康郁伶, 數位家庭普適服務環境中之法則式衝突解決策略
+								<span class="thesis-en">(Rule-Based Conflict Resolution Strategies for Pervasive Services in Digital Home)</span>
+							</li>
+						</ul>
+					</li>
+					<li><span class="year">2009</span>
+						<ul>
+							<li>沈岳德, 在行動感測器網路下針對移動物件監控之合作式巡守、目標追蹤及動態互助策略
+								<span class="thesis-en">(Collaborative Patrolling, Target Tracking and Dynamic Cooperation for Moving Object Monitoring in Mobile Sensor Networks)</span>
+							</li>
+							<li>黃詩珽, 使用者活動之結構化塑模、意向解析、個人化查詢精鍊、多重目標搜尋與結果重組
+								<span class="thesis-en">(Structured Modeling and Intention Extraction of User Activities for Personalized Query Refinement, Multipurpose Searching and Result Reranking)</span>
+							</li>
+							<li>黃泰一, 強度導向跳島式查詢引導與穩定度導向資料推播之動態行動資料管理
+								<span class="thesis-en">(Intensity Directed Multi-hop Request Routing and Stability Induced Data Dissemination for Dynamic Data Management in Mobile Environments)</span>
+							</li>
+							<li>陳建博, 應用本體論分析與樣式比對之竊盜罪裁判書檢索
+								<span class="thesis-en">(Ontology Analysis and Pattern Matching for Larceny Judgment Retrieval)</span>
+							</li>
+						</ul>
+					</li>
+					<li><span class="year">2008</span>
+						<ul>
+							<li>陳盈君, RFID資料之階層式組織、服務品質感知動態整合與分散式查詢處理
+								<span class="thesis-en">(Hierarchical Organization and QoS-aware Dynamic Aggregation for Distributed Query Processing of RFID Data)</span>
+							</li>
+							<li>何承恩, 行動環境中之服務品質感知動態探照燈式預取及可調適點對點串流媒體服務
+								<span class="thesis-en">(QoS-aware Dynamic Headlight Prefetching and Adaptive P2P Media Streaming in Mobile Environments)</span>
+							</li>
+						</ul>
+					</li>
+					<li><span class="year">2007</span>
+						<ul>
+							<li>李孟哲, RFID查詢語言設計與空間時間資料之有效管理
+								<span class="thesis-en">(Query Language Design and Effective Spatiotemporal Management of RFID Data)</span>
+							</li>
+							<li>趙金宏, 使用者活動模式化與興趣學習之個人化查詢精鍊與結果重組研究
+								<span class="thesis-en">(Activity Modeling and Interest Learning for Personalized Query Refinement and Result Reranking)</span>
+							</li>
+							<li>黃盈仁, 摘要資訊交換、有向性查詢導引暨主動式資料傳播之行動資料管理技術
+								<span class="thesis-en">(Summary Information Exchange, Directed Request Routing and Proactive Data Dissemination for Dynamic Mobile Data Management)</span>
+							</li>
+						</ul>
+					</li>
+					<li><span class="year">2006</span>
+						<ul>
+							<li>沈惟嘉, 以關聯性服務為基礎之QoS計算與網路服務組合
+								<span class="thesis-en">(Service Dependency Driven QoS Computation for Web Services Composition)</span>
+							</li>
+							<li>范修豪, 行動環境中使用者活動探勘與動態資料管理
+								<span class="thesis-en">(Activity Mining and Dynamic Data Management in Mobile Environments)</span>
+							</li>
+							<li>吳岱融, 以ECA法則為基礎之跨企業工作流動態重劃
+								<span class="thesis-en">(ECA Rule Based Dynamic Replanning for Cross Enterprise Workflow Management)</span>
+							</li>
+							<li>徐榮助, 在行動環境中支援探照燈式預取與點對點串流媒體之有效策略
+								<span class="thesis-en">(Effective Headlight Prefetching and P2P Media Streaming in Mobile Environments)</span>
+							</li>
+						</ul>
+					</li>
+					<li><span class="year">2005</span>
+						<ul>
+							<li>曾晨光, Self-organization Strategies for Dynamic Power Management in Heterogeneous Mobile Sensor Networks
+								<span class="thesis-en">(異質性行動感測網路中動態能源管理之自我組織策略)</span>
+							</li>
+							<li>劉昭宏, Self-organization Strategies for Dynamic Context Coverage Problem in Heterogeneous Mobile Sensor Networks
+								<span class="thesis-en">(異質性行動感測網路中動態情境覆蓋問題之自我組織策略)</span>
+							</li>
+							<li>陳建鳴, 行動環境中點對點串流媒體之預取與資料管理
+								<span class="thesis-en">(Prefetching and Data Management for P2P Media Streaming in Mobile Environments)</span>
+							</li>
+							<li>陳信明, 蝴蝶式儲位規劃在物流中心揀貨系統之應用
+								<span class="thesis-en">(Butterfly Storage Location Assignment Planning For Item Picking In Distribution Center)</span>
+							</li>
+						</ul>
+					</li>
+					<li><span class="year">2004</span>
+						<ul>
+							<li>曾信誠, 以本體論為基礎之使用者喜好萃取、隱私權控管與側寫建構
+								<span class="thesis-en">(Ontology-based User Profiling with Interest Extraction and Privacy Control)</span>
+							</li>
+							<li>林俊豪, XML交易式網路服務之分析切割與分散執行
+								<span class="thesis-en">(Analysis, Partitioning and Distributed Execution of XML E-Commerce Transactional Web Services)</span>
+							</li>
+							<li>洪奕璿, 採用本體論推理之使用者意向萃取、查詢擴充與概念式擷取
+								<span class="thesis-en">(Ontological Inference for User Intention Extraction, Query Expansion and Concept-based Retrieval)</span>
+							</li>
+							<li>吳志成, 醫療資訊系統導入電子簽章之參考架構與整體解決方案
+								<span class="thesis-en">(A Reference Architecture and Solution Plan For The Employment of Digital Signature in Medical Information System)</span>
+							</li>
+							<li>劉和師, 休學
+								<span class="thesis-en">()</span>
+							</li>
+						</ul>
+					</li>
+					<li><span class="year">2003</span>
+						<ul>
+							<li>蔣君儀, 支援通用存取及個人化之調適性呈現架構
+								<span class="thesis-en">(An Adaptive Presentation Framework for Universal Access and Personalization)</span>
+							</li>
+							<li>徐淑華, 以本體論為基礎之語意註解編寫與存取
+								<span class="thesis-en">(Ontology-Based Semantic Annotation Authoring and Retrieval)</span>
+							</li>
+							<li>謝至斌, 基於動態代理人技術之跨企業交易系統
+								<span class="thesis-en">(Dynamic Agent Based Cross-Enterprise Transactional System)</span>
+							</li>
+							<li>洪冠群, 多重最小支持度關聯規則探勘演算法之醫療檢驗應用：以血液透析病患之住院預測為例
+								<span class="thesis-en">(Multiple Minimum Support Association Rule Mining for Hospitalization Prediction of Hemodialysis Patients)</span>
+							</li>
+							<li>黃俊雄, 支援通用存取之使用者意向聚焦與資源感知語意轉形
+								<span class="thesis-en">(Focus Based Resource-Aware Semantic Transcoding for Universal Access)</span>
+							</li>
+						</ul>
+					</li>
+					<li><span class="year">2002</span>
+						<ul>
+							<li>林國漳, 以 XML 為基礎之跨企業工作流樣板，程序模式化與商務活動管理
+								<span class="thesis-en">(XML Based Cross Enterprise Workflow Patterns, Business Modeling and Activity Management)</span>
+							</li>
+							<li>廖浩凱, 多代理人階層式合作策略之研究與比較分析--以 RoboCupRescue 為例
+								<span class="thesis-en">(Hierarchical Cooperation Strategies for Multiagent System in RoboCupRescue)</span>
+							</li>
+							<li>柯維中, 針對可移動資料源提供位置關聯式擷取之行動代理人與動態資料管理策略
+								<span class="thesis-en">(Mobile Agents and Dynamic Data Management Strategies for Location-Based Access to Moving Data Sources)</span>
+							</li>
+						</ul>
+					</li>
+					<li><span class="year">2001</span>
+						<ul>
+							<li>吳坤達, 位置關聯服務之動態資料管理策略
+								<span class="thesis-en">(Dynamic Data Management Strategies for Location-Based Services)</span>
+							</li>
+							<li>曾欣燕, XML 資料源之自動化 DTD 整合技術
+								<span class="thesis-en">(Automatic DTD Integration for XML Data Sources)</span>
+							</li>
+							<li>莊敏慧, 元件式藍芽應用程式發展工具
+								<span class="thesis-en">(BlueDev: A Component-based Bluetooth Application Development Toolkit)</span>
+							</li>
+						</ul>
+					</li>
+					<li><span class="year">2000</span>
+						<ul>
+							<li>李青松, 以使用者側寫，文件結構及伺服器端提示為基礎之行動網際網路資訊預取
+								<span class="thesis-en">(Mobile Web Prefetching Based on User Profile, Document Structure and Server Hints)</span>
+							</li>
+							<li>孫承鴻, 以 XML 為基礎在無線網路下之個人化資訊服務
+								<span class="thesis-en">(XML Based Personalized Information Services in Mobile Environments)</span>
+							</li>
+							<li>陳文盛, 利用語音介面擷取影像資料庫之模組化架構
+								<span class="thesis-en">(A Modular Framework for Speech Access to Image Databases)</span>
+							</li>
+						</ul>
+					</li>
+					<li><span class="year">1999</span>
+						<ul>
+							<li>蔣興志, 消費者導向智慧型代理群在電子商務上之應用
+								<span class="thesis-en">(Consumer-Oriented Intelligent Agent Team for Electronic Commerce)</span>
+							</li>
+							<li>趙弘舜, 支援調適性行動計算之事件引擎
+								<span class="thesis-en">(Event Enging for Adaptive Mobile Computing0
+				 黃光遠, 以代理人為仲介之行動資訊傳播技術
+				(Agent-Mediated Information Dissemination in Mobile Environment)</span>
+							</li>
+						</ul>
+					</li>
+					<li><span class="year">1998</span>
+						<ul>
+							<li>張宇策, 支援行動資訊管理之主動式資料複製演算法
+								<span class="thesis-en">(An Active Data Replication Scheme for Mobile Information Management)</span>
+							</li>
+							<li>許聖統, 瀏覽嗜好與行為導向之 Intranet 預取演算法
+								<span class="thesis-en">(A Preference-Oriented Approach to Intranet Prefetching)</span>
+							</li>
+							<li>游奕欣, 行動企業網路之整合式快取
+								<span class="thesis-en">(Integrated Caching for Mobile Intranet)</span>
+							</li>
+						</ul>
+					</li>
+					<li><span class="year">1997</span>
+						<ul>
+							<li>張春順, 模組化行動式主動資料庫之建構
+								<span class="thesis-en">(A Modular Framework for Building Mobile Active Database System)</span>
+							</li>
+							<li>何世勳, 行動計算環境中之主動式法則處理
+								<span class="thesis-en">(Active Rule Processing in Mobile Environment)</span>
+							</li>
+							<li>陳淑鈞, 行動計算科技在電腦輔助學習上之應用
+								<span class="thesis-en">(The Application of Mobile Computing Technologies in Computer Aided Learning)</span>
+							</li>
+						</ul>
+					</li>
+				</ul>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	</div>
+	<!--//Students-->
+	<!--family-->
+	<div id="family" class="family">
+		<div class="container">
+			<h3 class="title">Family</h3>
+			<div class="col-md-8 col-md-offset-2 text-center">
+				<div class="img-wrapper">
+					<a href="http://web.csie.ndhu.edu.tw/showyang/Hsinyi/public_html/index.html" target="_blank">
+					<img src="images/family/hsinyi.png" class="circular thumbnail"></a>
+					<div class="img-cap">My better half</div>	
+				</div>
+				<div class="img-wrapper">
+					<a href="https://soundcloud.com/wu-alexander" target="_blank">
+					<img src="images/family/alex.jpg" class="circular thumbnail">
+					</a>
+					<div class="img-cap">Alex</div>
+				</div>
+				<div class="img-wrapper">
+					<a href="https://github.com/douglaswu" target="_blank">
+					<img src="images/family/douglas.jpg" class="circular thumbnail">
+					</a>
+					<div class="img-cap">Douglas</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--//family-->
+
+	</div>
+	<!--//content-->	
+
+	<!--footer-->
+	<div class="footer">
+		<div class="container">
+			<p>© 2017 Show-Yang Wu. All rights reserved | Design by <a href="http://w3layouts.com">W3layouts</a> | Redesign by <a href="https://github.com/douglaswu">Douglas Wu</a></p>
+		</div>
+	</div>
+	<!--//footer-->
+	<!--smooth-scrolling-of-move-up-->
+	<script type="text/javascript">
+		$(document).ready(function() {
+		
+			var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+			};
+			
+			$().UItoTop({ easingType: 'easeOutQuart' });
+			
+		});
+	</script>
+	<!--//smooth-scrolling-of-move-up-->
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+
+/* .modal-fullscreen */
+
+.modal-fullscreen {
+  background: transparent;
+}
+.modal-fullscreen .modal-content {
+  background: transparent;
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.modal-backdrop.modal-backdrop-fullscreen {
+  background: #ffffff;
+}
+.modal-backdrop.modal-backdrop-fullscreen.in {
+  opacity: .97;
+  filter: alpha(opacity=97);
+}
+
+.modal-body ul {
+    font-size: 1.2em;
+    line-height: 1.7em;
+    margin-left: 20px;
+}
+.modal-body .abstract ul {
+    margin-left: 45px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.modal-body .abstract ul li {
+    margin-bottom: 10px;
+}
+.modal-body h4 {
+    margin-bottom: 0.7em;
+    margin-top: 0.8em;
+    font-size: 1.5em;
+}
+
+#modal-students .modal-body h4{
+  color: #296EB4;
+}
+#modal-students .modal-body > ul > li,
+ul.master-list > li > ul > li  {
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+ul.master-list > li{
+  list-style-type: none;
+}
+ul.master-list .year {
+  font-size: 22px;
+  color: #948392;
+  font-weight: bold;
+  margin-left: -15px;
+  margin-bottom: 15px;
+  margin-top: 20px;
+  display: block;
+}
+@media(max-width:480px){
+  #modal-students .modal-body > ul > li,
+  ul.master-list > li > ul > li {
+    font-size: 10.8px;
+    line-height: 15px;
+    margin-bottom: 6px;
+  }
+}
+
+
+
+@media (min-width: 1000px) {
+  .modal-body span.thesis-en {
+    margin-left: 60px;
+    display: block;
+  }
+}
+
+.modal-header .close {
+    font-size: 30px;
+}
+.modal-header .close:focus {
+    outline: none;
+}
+/* .modal-fullscreen size: we use Bootstrap media query breakpoints */
+
+.modal-fullscreen .modal-dialog {
+  margin: 0;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .modal-fullscreen .modal-dialog {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .modal-fullscreen .modal-dialog {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .modal-fullscreen .modal-dialog {
+     width: 1170px;
+  }
+}
